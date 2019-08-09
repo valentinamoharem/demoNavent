@@ -1,0 +1,236 @@
+/*IMPORTANTE: falta el mediaquerie para formato landscape, botón de contacto y popup form*/
+/*también modificar título de propiedad, precio por m2*/
+/*agregar hover con cambio de color al ícono del corazón*/
+      
+      body {
+        margin-top: 0%;
+        font-family: Roboto;
+       }
+    
+    /*Slider*/
+        #container-slider {
+        display: inline-flex;
+        height: 45%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 55px;
+        }
+            /*Images*/
+        .mySlides {
+            height: auto;
+            width: inherit;
+            margin: 0;
+            border: 1px rgba(0, 0, 0, 0,2) solid;
+            align-self: flex-start;
+        }
+            /*Slider-buttons*/
+        button {
+            height: 10%;
+            width: 2em;
+            border: none;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+        }
+    
+        button:focus {
+            border: none;
+        }
+    
+            /*Button icons*/
+        button i {
+            color: white;
+            font-size: 3rem;
+        }
+    
+            /*Left and Right button*/
+        #left-but {
+            left: 0;
+            margin-left: 1%;
+        }
+    
+        #right-but {
+            right: 0;
+            margin-right: 2%;
+        }
+    
+            /*Purple label and heart*/
+        #label {
+            background-color: blueviolet;
+            position: absolute;
+            width: auto;
+            padding: 4px;
+            display: flex;
+            align-self: flex-start;
+            font-family: roboto;
+            font-size: 23px;
+            margin-top: 5%;
+            margin-right: 5%;
+            color: white;
+            font-weight: 400;
+        }
+    
+        .black-heart {
+            font-size: 3rem;
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-self: flex-start;
+            padding: 5% 3%;
+            text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+        }
+    
+        .red-heart {
+            font-size: 3rem;
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-self: flex-start;
+            padding: 5% 3%;
+            text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+            color: red;
+        }
+    
+    /*Information*/
+        .aligned {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .container-info {
+            position: relative;
+            padding: 5%;
+            padding-top: 2%;
+        }
+
+        .container-loc {
+            align-self: flex-start;
+            margin-top: 3px;
+        }
+
+        #title {
+            margin-top: 0px;
+        }
+
+        #loc-icon {
+            padding: 2px;
+            margin: 5px;
+            margin-top: 0px;
+            align-self: flex-start;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        #loc {
+            align-self: flex-start;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        
+
+        .rise {
+            position: absolute;
+            display: block;
+            align-self: flex-end;
+            color: white;
+            padding: 0;
+            margin-left: 10px;
+            margin-top: 40px;
+        }
+
+        #price {
+            font-weight: bold;
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+
+        #rel {
+            visibility: hidden;
+        }
+
+        .prop-info {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            word-spacing: 2px;
+        }
+
+        p + p {
+            margin-left: 10px;
+        }
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .red-heart, .black-heart {
+        font-size: 2.5rem;
+    }
+
+    #label {
+        font-size: 21px;
+    }
+
+    .rise {
+        position: absolute;
+        display: block;
+        align-self: flex-end;
+        color: white;
+        padding: 0;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    #price {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .prop-info {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+
+    .container-info {
+        align-items: flex-start;
+    }
+
+    #title {
+        align-self: flex-start;
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width: 350px) and (max-width: 399px) {
+    .red-heart, .black-heart {
+        font-size: 2.7rem;
+    }
+
+    #label {
+        font-size: 19px;
+    }
+
+    #price {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 31px;
+    }
+
+    .container-info {
+        align-items: flex-start;
+    }
+
+    .rise {
+        margin-bottom: 40px;
+    }
+    
+    #container-prop {
+        margin-bottom: 28.5px;
+    }
+}
+
