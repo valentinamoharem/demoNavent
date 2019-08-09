@@ -13,38 +13,46 @@
         <!--modificar src de las imágenes por otras más lindas del mismo tamaño-->
         <!--ordenar head y comentar con uso de cada elemento-->
         <!--IDEA: ¿adjuntar en el .zip terminado un README.txt explicando lo que hice?-->
-        <div id="container-slider">
-            <!--Slider con imágenes de propiedades-->
-                <button id="left-but" onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
-                <p id="label">Súper destacado</p>
-                <i class="fas fa-heart black-heart" id="heart"></i>
-                <img class="mySlides" src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/86/66/23/1200x1200/1699248701.jpg">
-                <img class="mySlides" src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/86/66/23/1200x1200/1699248695.jpg">
-                <img class="mySlides" src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/86/66/23/1200x1200/1699248694.jpg">
-                <button id="right-but" onclick="plusDivs(+1)"><i class="fas fa-chevron-right"></i></button>
-                <div class="rise">
-                        <span id="container-price" class="aligned">
-                            <p id="price">U$S <span id="number" contenteditable="true">1,400,000</span></p>
-                            <p id="rel"> $/m² 3.680</p>
-                        </span>
-                        <span id="container-prop" class="aligned">
-                            <p class="prop-info">380m²</p>
-                            <p class="prop-info"> 3 Dormitorios </p>
-                            <p class="prop-info"> 2 Baños </p>
-                            <p class="prop-info"> 2 Cocheras </p>
-                        </span>
+        <div class="wrapper">
+            <div id="container-slider" class="slider">
+                <!--Slider con imágenes de propiedades-->
+                <div class="buttons-container">
+                    <button id="left-but" onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <button id="right-but" onclick="plusDivs(+1)"><i class="fas fa-chevron-right"></i></button>
                 </div>
-        </div>
-        <div class="container-info">
-            <h2 id="title">Si vas a utilizar un pasaje de Lorem Ipsum, necesitas estar seguro</h2>
-            <span id="container-loc" class="aligned">
-                <i class="fas fa-map-marker-alt" id="loc-icon"></i>
-                <p id="loc"><strong>Juan Francisco Seguí 3900</strong>, Palermo Chico, Palermo</p>
-            </span>
-            <p id="description">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
-                texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el
-                año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</p>
-            <button>Contactar</button>
+                <div class="overlay-sup-container">
+                    <p id="label">Súper destacado</p>
+                    <i class="fas fa-heart black-heart" id="heart"></i>
+                </div>
+                <div class="img-container">
+                    <img class="mySlides" src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/86/66/23/1200x1200/1699248701.jpg">
+                    <img class="mySlides" src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/86/66/23/1200x1200/1699248695.jpg">
+                    <img class="mySlides" src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/86/66/23/1200x1200/1699248694.jpg">
+                </div>  
+            </div>
+            <div class="rise fast-detail-container">
+                <span id="container-price" class="aligned">
+                    <p id="price">U$S <span id="number" contenteditable="true">1,400,000</span></p>
+                    <p id="rel"> $/m² 3.680</p>
+                </span>
+                <span id="container-prop" class="aligned">
+                    <p class="prop-info">380m²</p>
+                    <p class="prop-info"> 3 Dormitorios </p>
+                    <p class="prop-info"> 2 Baños </p>
+                    <p class="prop-info"> 2 Cocheras </p>
+                </span>
+            </div>
+            <div class="container-info">
+                <h2 id="title">Si vas a utilizar un pasaje de Lorem Ipsum, necesitas estar seguro</h2>
+                <span id="container-loc" class="aligned">
+                    <i class="fas fa-map-marker-alt" id="loc-icon"></i>
+                    <p id="loc"><strong>Juan Francisco Seguí 3900</strong>, Palermo Chico, Palermo</p>
+                </span>
+                <p id="description">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                    texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el
+                    año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</p>
+            </div>
+            <button class="contact-button">Contactar</button>
         </div>
         <script src="script.js"></script>
     </body>
